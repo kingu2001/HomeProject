@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>ATM_Software</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\GOLDEN.png" />
+    <None Remove="Image\key-icon.png" />
+    <None Remove="Image\user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\GOLDEN.png" />
+    <Resource Include="Image\key-icon.png" />
+    <Resource Include="Image\user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+</Project>
