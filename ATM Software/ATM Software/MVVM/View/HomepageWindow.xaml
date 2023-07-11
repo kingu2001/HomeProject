@@ -1,0 +1,152 @@
+﻿<Window x:Class="ATM_Software.MVVM.View.HomepageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_Software.MVVM.View"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Height="600"
+        Width="900"
+        WindowStyle="None">
+
+    <Border CornerRadius="25">
+        <Border CornerRadius="23"
+                BorderThickness="2"
+                Opacity="0.94">
+
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#F2E800"/>
+                    <GradientStop Color="#F2E800"/>
+                    <GradientStop Color="#F2E800"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#141414" Offset="0"/>
+                    <GradientStop Color="#141414" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0">
+                    <TextBlock Text="GOLDEN"
+                               Foreground="Yellow"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="40"
+                               FontWeight="Bold"
+                               Margin="0,10,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1">
+                    <Button Content="Homepage"
+                            Foreground="#FFDA00"
+                            Background="Transparent"
+                            Height="60"
+                            Width="140"
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            >
+
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="Income"
+                            Foreground="#FFDA00"
+                            Background="Transparent"
+                            Height="60"
+                            Width="140"
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            >
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Content="Balance"
+                            Foreground="#FFDA00"
+                            Background="Transparent"
+                            Height="60"
+                            Width="140"
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            >
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Content="Wishlist"
+                            Foreground="#FFDA00"
+                            Background="Transparent"
+                            Height="60"
+                            Width="140"
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            >
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Content="Log out"
+                            Foreground="#FFDA00"
+                            Background="Transparent"
+                            Height="60"
+                            Width="140"
+                            Margin="0,10,0,0"
+                            FontSize="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            >
+
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+    </Border>
+ 
+</Window>

@@ -10,15 +10,26 @@ namespace ATM_Software.MVVM.Model
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string CreditCardNumber { get; set; }
-        public int PinCode { get; set; }
+        public double Income { get; set; }
+        public double Balance { get; set; }
+        public double WishListPrice { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
-        public User(string firstName, string lastName, string creditCardNumber, int pinCode)
+        public User(string firstName, string lastName, double income, double balance, double wishListPrice, string username, string password)
         {
             firstName = FirstName; 
             lastName = LastName;
-            CreditCardNumber = creditCardNumber;
-            PinCode = pinCode;
+            income = Income;
+            balance = Balance;
+            wishListPrice = WishListPrice; 
+            username = Username; 
+            password = Password;
+        }
+
+        public override string ToString()
+        {
+            return $"{FirstName}:{LastName}:{Income}:{Balance}:{WishListPrice}:{Username}:{Password}";
         }
     }
 }

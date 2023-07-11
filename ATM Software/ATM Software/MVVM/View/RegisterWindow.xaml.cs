@@ -15,34 +15,29 @@ using System.Windows.Shapes;
 namespace ATM_Software.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for RegisterWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class RegisterWindow : Window
     {
-        HomepageWindow hpw; 
-        public LoginWindow()
+        public RegisterWindow()
         {
             InitializeComponent();
-            hpw = new HomepageWindow();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
+            if(e.LeftButton == MouseButtonState.Pressed)
             {
-                this.DragMove();
+                this.DragMove(); 
+            } 
+        }
+
+        private void CreateAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (FirstName_Box.Text != "" && LastName_Box.Text != "" && Username_Box.Text != "" && Password_Box.Password != "" && Password_Box.Password == ReenterPassword_Box.Password)
+            {
+
             }
-        }
-
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
-        {
-            hpw.Show();
-            Close(); 
-        }
-
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

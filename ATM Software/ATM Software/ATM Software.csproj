@@ -9,19 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image\Dawn.png" />
     <None Remove="Image\GOLDEN.png" />
     <None Remove="Image\key-icon.png" />
     <None Remove="Image\user-icon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\Dawn.png" />
     <Resource Include="Image\GOLDEN.png" />
     <Resource Include="Image\key-icon.png" />
     <Resource Include="Image\user-icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Repository\" />
   </ItemGroup>
 
 </Project>
