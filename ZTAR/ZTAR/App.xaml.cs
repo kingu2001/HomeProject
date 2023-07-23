@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ATM_Software
+namespace ZTAR
 {
     /// <summary>
     /// Interaction logic for App.xaml

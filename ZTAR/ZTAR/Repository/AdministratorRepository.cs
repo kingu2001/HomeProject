@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATM_Software.Repository
+namespace ZTAR.Repository
 {
-    class UserRepository
+    internal class AdministratorRepository
     {
     }
 }

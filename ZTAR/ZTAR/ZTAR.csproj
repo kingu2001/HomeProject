@@ -3,23 +3,24 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>ATM_Software</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Image\Dawn.png" />
-    <None Remove="Image\GOLDEN.png" />
     <None Remove="Image\key-icon.png" />
     <None Remove="Image\user-icon.png" />
+    <None Remove="Image\ZTAR.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Image\Dawn.png" />
-    <Resource Include="Image\GOLDEN.png" />
+    <Folder Include="Command\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Image\key-icon.png" />
     <Resource Include="Image\user-icon.png" />
+    <Resource Include="Image\ZTAR.png" />
   </ItemGroup>
 
 </Project>
