@@ -8,19 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Image\key-icon.png" />
-    <None Remove="Image\user-icon.png" />
-    <None Remove="Image\ZTAR.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Command\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Image\key-icon.png" />
-    <Resource Include="Image\user-icon.png" />
-    <Resource Include="Image\ZTAR.png" />
+    <Folder Include="MVVM\Model\" />
+    <Folder Include="MVVM\ViewModel\" />
+    <Folder Include="SQL connection\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
 
 </Project>

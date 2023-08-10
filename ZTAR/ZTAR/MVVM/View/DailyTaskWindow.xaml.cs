@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ZTAR.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for DailyTaskWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class DailyTaskWindow : Window
     {
-        public LoginWindow()
+        public DailyTaskWindow()
         {
             InitializeComponent();
         }

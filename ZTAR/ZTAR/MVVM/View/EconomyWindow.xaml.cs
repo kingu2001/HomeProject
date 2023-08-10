@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ZTAR.MVVM.View
+namespace ZTAR
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class EconomyWindow : Window
     {
-        public LoginWindow()
+        public EconomyWindow()
         {
             InitializeComponent();
         }
