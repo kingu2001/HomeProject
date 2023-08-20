@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MvcMovie.Models;
 using System.Diagnostics;
-using WebApp.Models;
 
-namespace WebApp.Controllers
+namespace MvcMovie.Controllers
 {
     public class HomeController : Controller
     {
