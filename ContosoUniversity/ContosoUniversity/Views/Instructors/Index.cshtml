@@ -47,11 +47,7 @@
                 <td>
                     @foreach (var course in item.CourseAssignments)
                     {
-                        //To separate courseID and courseTitle.
-                        <span>@course.Course.CourseID</span>
-                        <span> @course.Course.Title</span>
-                     
-                        <br />
+                        @course.Course.CourseID @course.Course.Title <br />
                     }
                 </td>
                 <td>
@@ -64,6 +60,7 @@
         }
     </tbody>
 </table>
+
 @if (Model.Courses != null)
 {
     <h3>Courses Taught by Selected Instructor</h3>
@@ -100,6 +97,7 @@
 
     </table>
 }
+
 @if (Model.Enrollments != null)
 {
     <h3>
