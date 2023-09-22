@@ -1,0 +1,14 @@
+﻿@using WeatherForecast.Models;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<ul>
+    @foreach(var forecast in ViewData["Weather"] as IList<Weather>)
+    {
+        <li>
+            @forecast.description
+            <img src=@ViewData["IconUrl"]/>
+        </li>
+    }
+</ul>
