@@ -1,14 +1,51 @@
-﻿@using WeatherForecast.Models;
+﻿@model WeatherForecast.Models.Root;
 @{
     ViewData["Title"] = "Home Page";
 }
+<form action="/Home/Index" method="get">
 
-<ul>
-    @foreach(var forecast in ViewData["Weather"] as IList<Weather>)
-    {
-        <li>
-            @forecast.description
-            <img src=@ViewData["IconUrl"]/>
-        </li>
-    }
-</ul>
+    <fieldset>
+        Days chosen
+        <select id="daysChose" name="daysChosen">
+
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <p><input type="submit" value="Submit" /> </p>
+
+    </fieldset>
+
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Temperature
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var data in Model.list)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => data.dt_txt)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => data.main.temp)
+                </td>
+            </tr>
+        }
+
+</tbody>
+</table>
+
+
+}
