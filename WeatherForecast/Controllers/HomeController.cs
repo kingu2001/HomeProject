@@ -30,10 +30,10 @@ namespace WeatherForecast.Controllers
             string responseBody = await response.Content.ReadAsStringAsync();
             Console.WriteLine(responseBody);
             Root forecast = JsonSerializer.Deserialize<Root>(responseBody);
-            foreach (var item in forecast.list)
-            {
-                item.main.temp = item.main.temp - 273.15;
-            }
+            //foreach (var item in forecast.list)
+            //{
+            //    item.main.temp = item.main.temp - 273.15;
+            //}
             //Console.WriteLine(forecast.name);
             //Console.WriteLine(forecast.main.temp);
             //Console.WriteLine(forecast.main.feels_like);
