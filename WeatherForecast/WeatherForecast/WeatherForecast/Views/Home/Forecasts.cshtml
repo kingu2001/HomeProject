@@ -1,0 +1,45 @@
+﻿@model WeatherForecast.Models.OpenWeather.Root
+
+@{
+	ViewData["Title"] = "Forecast";
+}
+
+<h1>Forecast</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Date
+			</th>
+			<th>
+				Temp
+			</th>
+			<th>
+				Description
+			</th>
+			<th>
+				Weather type
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.list)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.dt_txt)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.main.temp)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.weather.First().description)
+				</td>
+				<td>
+					<img src="https://openweathermap.org/img/wn/@(item.weather.First().icon).png" />
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

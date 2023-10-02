@@ -1,0 +1,27 @@
+﻿@model WeatherForecast.Models.OpenWeather.Root
+
+@{
+	ViewData["Title"] = "Weather";
+}
+
+<h1>Weather App</h1>
+<form action="Home/Forecasts">
+	<div>
+		<label for="days">Choose a number of days</label>
+		<select name="numOfDays" id="numOfDays">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div>
+		<label for="days">Choose metric og imperial</label>
+		<select name="unit" id="unit">
+			<option value="metric">Metric</option>
+			<option value="imperial">Imperial</option>
+		</select>
+	</div>
+	<input type="submit" value="Submit" />
+</form>
